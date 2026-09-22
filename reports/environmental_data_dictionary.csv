@@ -1,0 +1,10 @@
+Variable,Description,Data_Type,Unit,Expected_Range,Generation_Method,Research_Rationale
+Env_ID,Unique identifier for this environmental record,String,-,EN000001-EN002160,Generated (sequential),Primary key for the table
+Location_ID,Foreign key to Dataset 2 locations.csv,String,-,L0001-L0072,Copied from locations.csv,Join key to Dataset 1/2
+Date,Calendar date,Date,-,2026-01-05 to 2026-02-03,Copied from Dataset 1's date range,Join key to Dataset 1
+Temperature_C,Mean daily temperature,Float,Celsius,~-10 to 40,SYNTHETIC: climate-baseline + seasonal sinusoid (hemisphere-aware) + latitude adjustment + daily noise,Ambient temperature is a documented environmental correlate of sleep onset/quality in sleep research
+Humidity_Percent,Relative humidity,Float,%,10-100,SYNTHETIC: climate baseline + daily noise,Humidity affects thermal comfort during sleep
+Daylight_Hours,Hours of daylight that date,Float,hours,0-24,"Standard solar-declination day-length formula from Latitude + day-of-year (deterministic, not random)",Daylight exposure is linked to circadian rhythm regulation
+Season,Meteorological season,Categorical,-,Winter/Spring/Summer/Autumn,Derived from day-of-year + hemisphere (Latitude sign) - not randomly assigned,Seasonal context for temperature/daylight interpretation
+Air_Quality_Index,Synthetic air quality index,Float,AQI-like scale,15-250,SYNTHETIC: climate/region baseline + mild seasonal adjustment + independent daily noise,Air quality is an emerging correlate of sleep-disordered breathing and sleep quality in the literature
+Environmental_Noise_dB,Synthetic ambient noise level,Float,decibels (dB),30-90,SYNTHETIC: Urban/Rural baseline (all Urban in this catalogue - see limitations) + independent daily noise,Nighttime noise exposure is a well-documented disruptor of sleep continuity

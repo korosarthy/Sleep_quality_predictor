@@ -1,0 +1,43 @@
+DATASET 3 - ENVIRONMENTAL VALIDATION REPORT
+Generated: 2026-09-14T18:22:16.670885
+Generator seed: 42
+
+DATA STATUS: SYNTHETIC ENVIRONMENTAL DATA
+Environmental values are synthetic and generated using location, climate, latitude,
+date, season, urban/rural context, and controlled daily variation. They are NOT
+real historical observations and must not be described as measurements.
+
+Unique locations: 72
+Unique dates: 30
+Total environmental records: 2160
+Date range: 2026-01-05 to 2026-02-03
+Missing values: 0
+Duplicate Location_ID+Date: 0
+
+Temperature_C: min=-14.9, max=33.9
+Humidity_Percent: min=17.3, max=94.2
+Daylight_Hours: min=5.86, max=15.11
+Air_Quality_Index: min=15.0, max=136.8
+Environmental_Noise_dB: min=36.1, max=78.1
+
+Season distribution:
+Season
+Winter    1380
+Summer     780
+
+Location coverage: 72 of 72 locations in Dataset 2 have environmental records
+Integration status: join test against daily_sleep.csv via person_location_mapping.csv -> SUCCESS
+Validation status: 12/12 checks passed
+======================================================================
+[PASS] 1. File loads successfully
+[PASS] 2. Correct number of rows (Location_ID x Date) -- found 2160, expected 2160
+[PASS] 3. Correct columns present
+[PASS] 4. No duplicate Location_ID + Date combinations -- 0 duplicates
+[PASS] 5. No missing Location_ID values
+[PASS] 6. No missing Date values
+[PASS] 7. No invalid numerical values (NaN/inf)
+[PASS] 8. All Location_ID values exist in Dataset 2 (locations.csv)
+[PASS] 9. All dates correspond to Dataset 1's longitudinal period -- Dataset 1 range: 2026-01-05 to 2026-02-03
+[PASS] 10. Every required Location_ID + Date combination exists -- 0 missing
+[PASS] 11. No sleep-quality/lifestyle/physiology target variables present
+[PASS] 12. Dataset can successfully join with the existing longitudinal dataset (via person_location_mapping -> Location_ID + Date) -- 0 unmatched rows out of 9000

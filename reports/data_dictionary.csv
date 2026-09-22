@@ -1,0 +1,41 @@
+Column_Name,Description,Data_Type,Table,Level,Raw_or_Derived,Allowed_Range,Purpose
+Person_ID,Unique synthetic individual identifier,String,PERSON,Person,Raw,P0001-P0300,"Primary key, links all daily tables"
+Age,Synthetic individual's age,Integer,PERSON,Person,Raw,18-75,Person context
+Gender,Synthetic individual's gender,Categorical,PERSON,Person,Raw,Male/Female/Other,Person context
+Occupation,Occupation category,Categorical,PERSON,Person,Raw,12 categories,"Drives schedule/lifestyle tendencies probabilistically, not deterministically"
+BMI,Body mass index,Float,PERSON,Person,Raw,~16.5-42,Physiological context
+BMI_Category,Categorized BMI,Categorical,PERSON,Person,Derived (from BMI),Underweight/Normal/Overweight/Obese,Physiological context
+Chronotype,Circadian preference,Categorical,PERSON,Person,Raw,Morning/Intermediate/Evening,Shapes timing distributions only
+Location_ID,Reserved FK for Dataset 2 (Geography) - not generated this round,String (placeholder),PERSON,Person,Placeholder,Always blank,Future join key only
+Record_ID,"Unique daily record identifier, shared across daily_sleep/daily_lifestyle/daily_physiology",String,DAILY_SLEEP,Daily,Raw,R000001-R009000,Primary key of the daily record
+Date,Calendar date the sleep period began,Date,DAILY_SLEEP,Daily,Raw,2026-01-05 to 2026-02-03,Time series key
+Day_of_Week,Day name,Categorical,DAILY_SLEEP,Daily,Derived (from Date),Monday-Sunday,Weekday/weekend analysis
+Is_Weekend,Weekend flag,Boolean,DAILY_SLEEP,Daily,Derived (from Date),True/False,Weekday/weekend analysis
+Sleep_Start_DateTime,Timestamp sleep period began,DateTime,DAILY_SLEEP,Daily,Raw,"Valid timestamp, minute precision",Primary sleep timing signal
+Wake_DateTime,Timestamp sleep period ended,DateTime,DAILY_SLEEP,Daily,Raw,"Valid timestamp, minute precision",Primary sleep timing signal
+Sleep_Onset_Latency_Minutes,Minutes to fall asleep after going to bed,Integer,DAILY_SLEEP,Daily,Raw - POST_SLEEP_OUTCOME,0-90,Completed-sleep outcome; exclude from same-night prediction inputs
+Number_of_Awakenings,Count of awakenings during the completed sleep period,Integer,DAILY_SLEEP,Daily,Raw - POST_SLEEP_OUTCOME,0-8,Completed-sleep outcome; exclude from same-night prediction inputs
+Sleep_Efficiency,"Time asleep / time in bed, percent",Float,DAILY_SLEEP,Daily,Raw - POST_SLEEP_OUTCOME,55-100,Completed-sleep outcome; exclude from same-night prediction inputs
+Sleep_Duration_Hours,Duration between Sleep_Start_DateTime and Wake_DateTime,Float,DAILY_SLEEP,Daily,Derived (from timestamps),0-16,Core sleep feature
+Bedtime_Hour,Bedtime as decimal hour (0-24),Float,DAILY_SLEEP,Daily,Derived (from timestamp),0-24,Timing regularity feature
+Wake_Time_Hour,Wake time as decimal hour (0-24),Float,DAILY_SLEEP,Daily,Derived (from timestamp),0-24,Timing regularity feature
+Sleep_Midpoint_Hour,"Midpoint of the sleep period, decimal hour",Float,DAILY_SLEEP,Daily,Derived (from timestamps),0-24,Circadian alignment feature
+Cross_Midnight_Flag,Whether the sleep period crosses calendar midnight,Boolean,DAILY_SLEEP,Daily,Derived (from timestamps),True/False,Sleep timing classification
+Daytime_Sleep_Flag,Whether the sleep midpoint falls in typical daylight hours (09:00-17:00),Boolean,DAILY_SLEEP,Daily,Derived (from timestamps),True/False,Distinguishes night-shift-style daytime sleep
+Sleep_Quality_Score,"Synthetic observed sleep-quality target, generated stochastically and LAST",Integer,DAILY_SLEEP,Daily,Target,1-10,Primary prediction target
+Sleep_Quality_Category,Categorized Sleep_Quality_Score,Categorical,DAILY_SLEEP,Daily,Derived (from score),Poor(1-3)/Average(4-6)/Good(7-10),Secondary classification target
+Physical_Activity_Minutes,Total physical activity minutes that day,Float,DAILY_LIFESTYLE,Daily,Raw,0-220,Lifestyle feature
+Daily_Steps,Step count that day,Integer,DAILY_LIFESTYLE,Daily,Raw,0-30000,Lifestyle feature
+Exercise_Duration_Minutes,Structured exercise minutes (subset of activity),Float,DAILY_LIFESTYLE,Daily,Raw,0-150,Lifestyle feature
+Caffeine_Intake_mg,Caffeine intake in mg,Float,DAILY_LIFESTYLE,Daily,Raw,0-600,Lifestyle feature
+Screen_Time_Hours,Total screen time in hours,Float,DAILY_LIFESTYLE,Daily,Raw,0-16,Lifestyle feature
+Work_Study_Hours,Hours spent working or studying,Float,DAILY_LIFESTYLE,Daily,Raw,0-14,Lifestyle feature
+Stress_Level,Self-report style stress rating,Integer,DAILY_LIFESTYLE,Daily,Raw,1-10,Lifestyle/subjective feature
+Fatigue_Level,Self-report style fatigue rating,Integer,DAILY_LIFESTYLE,Daily,Raw,1-10,Lifestyle/subjective feature
+Nap_Occurred,Whether a nap occurred that day,Boolean,DAILY_LIFESTYLE,Daily,Raw,True/False,Kept separate from primary sleep
+Nap_Start_Time,"Nap start time (HH:MM), blank if no nap",String (time),DAILY_LIFESTYLE,Daily,Raw,Blank or HH:MM,Structurally missing when Nap_Occurred=False
+Nap_Duration_Minutes,"Nap duration in minutes, 0 if no nap",Integer,DAILY_LIFESTYLE,Daily,Raw,0-150,Never added into Sleep_Duration_Hours
+Is_Disruption_Day,Whether a disruption event was applied that day during generation,Boolean,DAILY_LIFESTYLE,Daily,Raw (generation metadata),True/False,Generator QA; optional model feature
+Resting_Heart_Rate,"Resting heart rate, bpm",Integer,DAILY_PHYSIOLOGY,Daily,Raw,40-120,Physiological feature
+Systolic_BP,Systolic blood pressure,Integer,DAILY_PHYSIOLOGY,Daily,Raw,85-165,Physiological feature
+Diastolic_BP,Diastolic blood pressure,Integer,DAILY_PHYSIOLOGY,Daily,Raw,50-105,Physiological feature

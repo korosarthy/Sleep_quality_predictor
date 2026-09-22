@@ -1,0 +1,21 @@
+DATASET 2 - GEOGRAPHIC VALIDATION REPORT
+Generated: 2026-09-13T14:40:32.519748
+Locations: 72 | Continents: 6 | Countries: 54
+Dataset 1 Location_ID status at generation time: blank/placeholder (no valid values)
+Person-location mapping source: Dataset 1 had no valid Location_ID values - generated a new balanced mapping
+Checks passed: 14/14
+======================================================================
+[PASS] 1. Unique Location_ID count -- 72 unique of 72 rows
+[PASS] 2. No duplicate locations (City+Country) -- 0 duplicates
+[PASS] 3. No missing values -- 0 missing cells
+[PASS] 4. Latitude valid (-90 to 90)
+[PASS] 5. Longitude valid (-180 to 180)
+[PASS] 6. Timezone looks like a valid IANA identifier (Region/City form)
+[PASS] 7. Continent values valid (six populated continents only)
+[PASS] 8. Region/Country relationships consistent (no region spans multiple continents) -- 0 region(s) span >1 continent
+[PASS] 9. No duplicate Person_ID + Location_ID mappings -- 0 duplicates
+[PASS] 10. Dataset 1 foreign-key compatibility (every mapped Location_ID exists in locations.csv) -- all resolved
+[PASS] 11. Continental coverage (all six populated continents present)
+[PASS] 12. Country coverage (multiple countries per continent) -- {'Africa': 11, 'Asia': 9, 'Europe': 12, 'North America': 6, 'Oceania': 6, 'South America': 10}
+[PASS] 13. Climate coverage (more than one climate category present) -- 13 distinct climates
+[PASS] 14. Urban/Rural distribution documented -- {'Urban': 72} (all Urban by design - see limitations note)

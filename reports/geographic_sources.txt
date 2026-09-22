@@ -1,0 +1,40 @@
+DATASET 2 - GEOGRAPHIC DATA SOURCE DOCUMENTATION
+Generated: 2026-09-13T14:40:32.521287
+
+CITY SELECTION
+72 real, named cities were selected to cover all six populated continents (12 per
+continent), spanning 39 countries, chosen for geographic/climate diversity and
+name recognition rather than a formal population-ranked list.
+
+COORDINATES (Latitude/Longitude)
+Values reflect standard, widely-published reference coordinates for each city's
+commonly-cited center point (the kind of figures consistent with public sources
+such as GeoNames or standard atlases). They were NOT fetched from a live geocoding
+API during this generation run - they come from general geographic knowledge.
+For production/publication use, these should be spot-checked against an
+authoritative source (e.g. GeoNames.org or an official national statistics office)
+before being treated as survey-grade.
+
+TIMEZONE
+IANA timezone identifiers (Region/City form, e.g. "Asia/Tokyo") were assigned
+based on each city's well-established timezone. Not independently re-verified
+against the live IANA tz database in this run.
+
+CLIMATE
+Climate labels are a simplified, single-word/phrase classification (broadly in
+the spirit of Koppen-style categories, e.g. Tropical, Mediterranean, Continental)
+assigned from general knowledge of each city's climate. This is a simplification
+for modeling purposes, not a precise Koppen-Geiger classification.
+
+URBAN/RURAL
+All 72 entries are classified Urban, since every entry is a named city. No rural
+locations were added, to avoid fabricating a "representative" rural coordinate
+without a genuine source - flagged as a known limitation of this dataset version
+rather than worked around.
+
+LIMITATIONS
+- Coordinates/timezones/climate are not independently re-verified against a live
+  API or authoritative geocoding source in this generation run.
+- Region names are informal geographic groupings for analysis convenience, not an
+  official standard (e.g. UN M49 geoscheme was not strictly followed).
+- No rural locations included (see above).

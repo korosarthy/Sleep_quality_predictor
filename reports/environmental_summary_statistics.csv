@@ -1,0 +1,6 @@
+Variable,Count,Mean,Std,Min,P25,Median,P75,Max
+Temperature_C,2160,13.36,12.11,-14.9,4.8,14.6,24.1,33.9
+Humidity_Percent,2160,63.53,11.82,17.3,56.1,64.0,72.7,94.2
+Daylight_Hours,2160,11.27,1.95,5.86,9.82,11.41,12.88,15.11
+Air_Quality_Index,2160,66.72,20.61,15.0,51.6,66.0,80.72,136.8
+Environmental_Noise_dB,2160,57.87,5.11,36.1,54.3,57.8,61.2,78.1

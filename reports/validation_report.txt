@@ -1,0 +1,47 @@
+DATASET 1 VALIDATION REPORT
+Generated: 2026-09-12T20:14:18.953228
+Generator version: 1.0.0 | Seed: 42 | N_PEOPLE=300 | N_DAYS=30
+Reference: Sleep_health_and_lifestyle_dataset.csv (Kaggle) - used for range calibration only, not copied
+Checks passed: 36/36
+======================================================================
+--- STRUCTURE ---
+[PASS] 300 unique people -- found 300
+[PASS] 9,000 daily records -- found 9000
+[PASS] Exactly 30 records/person -- min=30, max=30
+[PASS] Unique Person_ID + Date
+[PASS] Unique Record_ID
+--- REFERENTIAL INTEGRITY ---
+[PASS] Every Person_ID in daily_sleep exists in persons.csv
+[PASS] Every Record_ID in daily_lifestyle matches daily_sleep
+[PASS] Every Record_ID in daily_physiology matches daily_sleep
+[PASS] Location_ID field present on persons.csv (placeholder FK for Dataset 2, not yet resolved)
+--- TEMPORAL ---
+[PASS] Dates sequential per person
+[PASS] No duplicate dates per person
+[PASS] Sleep timestamps valid
+[PASS] Wake after sleep start (full dates considered)
+[PASS] Sleep duration calculated correctly from timestamps -- max diff=0.0033h
+[PASS] Midnight crossing handled (no negative/garbage durations) -- 5974 records cross midnight, all durations positive
+--- RANGES ---
+[PASS] Age plausible (18-75)
+[PASS] BMI plausible (15-45)
+[PASS] Stress 1-10
+[PASS] Fatigue 1-10
+[PASS] Sleep quality 1-10
+[PASS] Steps non-negative
+[PASS] Activity non-negative
+[PASS] Exercise non-negative
+[PASS] Caffeine non-negative
+[PASS] Screen time non-negative
+[PASS] Work/study hours plausible (0-16)
+[PASS] Nap duration non-negative
+[PASS] Heart rate plausible (40-120)
+[PASS] Blood pressure plausible (systolic > diastolic, in range)
+--- LONGITUDINAL ---
+[PASS] Person-level attributes remain stable (one row per Person_ID in persons.csv)
+[PASS] Daily values actually vary (not every day identical) -- 100.0% of people show duration variation
+[PASS] Not every day is identical for any person -- 0 found
+[PASS] Not every day is unboundedly random (variability stays bounded per person) -- 100.0% of people have std < 2.0h
+[PASS] Occasional disruptions exist (disruption rate between 5% and 30%) -- disruption rate=14.3%
+[PASS] Profiles overlap: chronotype does not directly determine quality -- chronotype range=0.20, overall std=1.36
+[PASS] Profiles overlap: occupation does not directly determine quality -- occupation range=0.37, overall std=1.36

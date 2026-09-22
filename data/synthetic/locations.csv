@@ -1,0 +1,73 @@
+Location_ID,Continent,Region,Country,City,Latitude,Longitude,Timezone,Climate,Urban_Rural
+L0001,Asia,South Asia,India,Delhi,28.6139,77.209,Asia/Kolkata,Subtropical,Urban
+L0002,Asia,South Asia,India,Mumbai,19.076,72.8777,Asia/Kolkata,Tropical,Urban
+L0003,Asia,East Asia,Japan,Tokyo,35.6762,139.6503,Asia/Tokyo,Temperate,Urban
+L0004,Asia,East Asia,Japan,Osaka,34.6937,135.5023,Asia/Tokyo,Temperate,Urban
+L0005,Asia,East Asia,South Korea,Seoul,37.5665,126.978,Asia/Seoul,Temperate,Urban
+L0006,Asia,East Asia,China,Beijing,39.9042,116.4074,Asia/Shanghai,Continental,Urban
+L0007,Asia,East Asia,China,Shanghai,31.2304,121.4737,Asia/Shanghai,Subtropical,Urban
+L0008,Asia,Southeast Asia,Singapore,Singapore,1.3521,103.8198,Asia/Singapore,Tropical,Urban
+L0009,Asia,Southeast Asia,Thailand,Bangkok,13.7563,100.5018,Asia/Bangkok,Tropical,Urban
+L0010,Asia,Southeast Asia,Indonesia,Jakarta,-6.2088,106.8456,Asia/Jakarta,Tropical,Urban
+L0011,Asia,Southeast Asia,Philippines,Manila,14.5995,120.9842,Asia/Manila,Tropical,Urban
+L0012,Asia,Middle East,United Arab Emirates,Dubai,25.2048,55.2708,Asia/Dubai,Dry,Urban
+L0013,Europe,Western Europe,United Kingdom,London,51.5072,-0.1276,Europe/London,Oceanic,Urban
+L0014,Europe,Western Europe,France,Paris,48.8566,2.3522,Europe/Paris,Oceanic,Urban
+L0015,Europe,Central Europe,Germany,Berlin,52.52,13.405,Europe/Berlin,Temperate,Urban
+L0016,Europe,Southern Europe,Spain,Madrid,40.4168,-3.7038,Europe/Madrid,Mediterranean,Urban
+L0017,Europe,Southern Europe,Italy,Rome,41.9028,12.4964,Europe/Rome,Mediterranean,Urban
+L0018,Europe,Northern Europe,Sweden,Stockholm,59.3293,18.0686,Europe/Stockholm,Continental,Urban
+L0019,Europe,Northern Europe,Norway,Oslo,59.9139,10.7522,Europe/Oslo,Continental,Urban
+L0020,Europe,Eastern Europe,Poland,Warsaw,52.2297,21.0122,Europe/Warsaw,Continental,Urban
+L0021,Europe,Central Europe,Austria,Vienna,48.2082,16.3738,Europe/Vienna,Temperate,Urban
+L0022,Europe,Western Europe,Netherlands,Amsterdam,52.3676,4.9041,Europe/Amsterdam,Oceanic,Urban
+L0023,Europe,Southern Europe,Greece,Athens,37.9838,23.7275,Europe/Athens,Mediterranean,Urban
+L0024,Europe,Southern Europe,Portugal,Lisbon,38.7223,-9.1393,Europe/Lisbon,Mediterranean,Urban
+L0025,Africa,East Africa,Kenya,Nairobi,-1.2921,36.8219,Africa/Nairobi,Highland Tropical,Urban
+L0026,Africa,North Africa,Egypt,Cairo,30.0444,31.2357,Africa/Cairo,Dry,Urban
+L0027,Africa,West Africa,Nigeria,Lagos,6.5244,3.3792,Africa/Lagos,Tropical,Urban
+L0028,Africa,Southern Africa,South Africa,Cape Town,-33.9249,18.4241,Africa/Johannesburg,Mediterranean,Urban
+L0029,Africa,Southern Africa,South Africa,Johannesburg,-26.2041,28.0473,Africa/Johannesburg,Subtropical Highland,Urban
+L0030,Africa,West Africa,Ghana,Accra,5.6037,-0.187,Africa/Accra,Tropical,Urban
+L0031,Africa,East Africa,Ethiopia,Addis Ababa,9.03,38.74,Africa/Addis_Ababa,Highland Tropical,Urban
+L0032,Africa,North Africa,Morocco,Casablanca,33.5731,-7.5898,Africa/Casablanca,Mediterranean,Urban
+L0033,Africa,West Africa,Senegal,Dakar,14.7167,-17.4677,Africa/Dakar,Dry,Urban
+L0034,Africa,East Africa,Uganda,Kampala,0.3476,32.5825,Africa/Kampala,Tropical,Urban
+L0035,Africa,North Africa,Tunisia,Tunis,36.8065,10.1815,Africa/Tunis,Mediterranean,Urban
+L0036,Africa,East Africa,Tanzania,Dar es Salaam,-6.7924,39.2083,Africa/Dar_es_Salaam,Tropical,Urban
+L0037,North America,Northeast US,United States,New York,40.7128,-74.006,America/New_York,Continental,Urban
+L0038,North America,West Coast US,United States,Los Angeles,34.0522,-118.2437,America/Los_Angeles,Mediterranean,Urban
+L0039,North America,Midwest US,United States,Chicago,41.8781,-87.6298,America/Chicago,Continental,Urban
+L0040,North America,South US,United States,Houston,29.7604,-95.3698,America/Chicago,Subtropical,Urban
+L0041,North America,Central Canada,Canada,Toronto,43.6532,-79.3832,America/Toronto,Continental,Urban
+L0042,North America,West Canada,Canada,Vancouver,49.2827,-123.1207,America/Vancouver,Oceanic,Urban
+L0043,North America,Central Canada,Canada,Montreal,45.5017,-73.5673,America/Toronto,Continental,Urban
+L0044,North America,Central Mexico,Mexico,Mexico City,19.4326,-99.1332,America/Mexico_City,Highland Subtropical,Urban
+L0045,North America,Central Mexico,Mexico,Guadalajara,20.6597,-103.3496,America/Mexico_City,Subtropical,Urban
+L0046,North America,Caribbean,Cuba,Havana,23.1136,-82.3666,America/Havana,Tropical,Urban
+L0047,North America,Central America,Costa Rica,San Jose,9.9281,-84.0907,America/Costa_Rica,Tropical Highland,Urban
+L0048,North America,Central America,Panama,Panama City,8.9824,-79.5199,America/Panama,Tropical,Urban
+L0049,South America,Southeast Brazil,Brazil,Sao Paulo,-23.5505,-46.6333,America/Sao_Paulo,Subtropical,Urban
+L0050,South America,Southeast Brazil,Brazil,Rio de Janeiro,-22.9068,-43.1729,America/Sao_Paulo,Tropical,Urban
+L0051,South America,Rio de la Plata,Argentina,Buenos Aires,-34.6037,-58.3816,America/Argentina/Buenos_Aires,Temperate,Urban
+L0052,South America,Andean Coastal,Peru,Lima,-12.0464,-77.0428,America/Lima,Desert Coastal,Urban
+L0053,South America,Andean,Colombia,Bogota,4.711,-74.0721,America/Bogota,Highland Tropical,Urban
+L0054,South America,Andean,Colombia,Medellin,6.2442,-75.5812,America/Bogota,Highland Tropical,Urban
+L0055,South America,Southern Cone,Chile,Santiago,-33.4489,-70.6693,America/Santiago,Mediterranean,Urban
+L0056,South America,Caribbean South America,Venezuela,Caracas,10.4806,-66.9036,America/Caracas,Tropical Highland,Urban
+L0057,South America,Andean,Ecuador,Quito,-0.1807,-78.4678,America/Guayaquil,Highland Tropical,Urban
+L0058,South America,Rio de la Plata,Uruguay,Montevideo,-34.9011,-56.1645,America/Montevideo,Temperate,Urban
+L0059,South America,Andean,Bolivia,La Paz,-16.5,-68.15,America/La_Paz,Highland,Urban
+L0060,South America,Southern Cone,Paraguay,Asuncion,-25.2637,-57.5759,America/Asuncion,Subtropical,Urban
+L0061,Oceania,East Coast Australia,Australia,Sydney,-33.8688,151.2093,Australia/Sydney,Temperate,Urban
+L0062,Oceania,Southeast Australia,Australia,Melbourne,-37.8136,144.9631,Australia/Melbourne,Oceanic,Urban
+L0063,Oceania,East Coast Australia,Australia,Brisbane,-27.4698,153.0251,Australia/Brisbane,Subtropical,Urban
+L0064,Oceania,West Australia,Australia,Perth,-31.9505,115.8605,Australia/Perth,Mediterranean,Urban
+L0065,Oceania,South Australia,Australia,Adelaide,-34.9285,138.6007,Australia/Adelaide,Mediterranean,Urban
+L0066,Oceania,North Island NZ,New Zealand,Auckland,-36.8485,174.7633,Pacific/Auckland,Oceanic,Urban
+L0067,Oceania,North Island NZ,New Zealand,Wellington,-41.2865,174.7762,Pacific/Auckland,Oceanic,Urban
+L0068,Oceania,South Island NZ,New Zealand,Christchurch,-43.5321,172.6362,Pacific/Auckland,Oceanic,Urban
+L0069,Oceania,Melanesia,Fiji,Suva,-18.1416,178.4419,Pacific/Fiji,Tropical,Urban
+L0070,Oceania,Melanesia,Papua New Guinea,Port Moresby,-9.4438,147.1803,Pacific/Port_Moresby,Tropical,Urban
+L0071,Oceania,Melanesia,New Caledonia,Noumea,-22.2758,166.4581,Pacific/Noumea,Tropical,Urban
+L0072,Oceania,Polynesia,Samoa,Apia,-13.8506,-171.7513,Pacific/Apia,Tropical,Urban

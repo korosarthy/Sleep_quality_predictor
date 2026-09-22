@@ -1,0 +1,41 @@
+Variable,Count,Mean,Median,Std,Min,Max,Category,Percent
+Age,9000,35.61,36.0,11.18,18.0,71.0,,
+BMI,9000,24.3,24.25,4.34,16.5,35.7,,
+Sleep_Duration_Hours,9000,7.24,7.27,0.99,2.8,10.8,,
+Sleep_Quality_Score,9000,6.34,6.0,1.36,1.0,10.0,,
+Stress_Level,9000,5.34,5.0,1.81,1.0,10.0,,
+Fatigue_Level,9000,4.84,5.0,1.42,1.0,10.0,,
+Physical_Activity_Minutes,9000,44.69,43.4,28.98,0.0,166.4,,
+Daily_Steps,9000,4954.61,4740.0,3313.32,0.0,22014.0,,
+Screen_Time_Hours,9000,5.4,5.46,2.03,0.0,14.89,,
+Caffeine_Intake_mg,9000,148.25,144.5,95.6,0.0,600.0,,
+Resting_Heart_Rate,9000,65.39,66.0,7.93,42.0,94.0,,
+Bedtime_Hour,9000,15.9,22.26,9.88,0.0,24.0,,
+Wake_Time_Hour,9000,7.21,6.72,2.76,0.92,22.1,,
+Sleep_Efficiency,9000,90.48,90.7,4.38,69.8,100.0,,
+Sleep_Onset_Latency_Minutes,9000,16.29,16.0,8.16,0.0,48.0,,
+Gender,155,,,,,,Male,51.67
+Gender,130,,,,,,Female,43.33
+Gender,15,,,,,,Other,5.0
+Occupation,52,,,,,,Software/IT Worker,17.33
+Occupation,48,,,,,,Office Worker,16.0
+Occupation,35,,,,,,Student,11.67
+Occupation,27,,,,,,Freelancer,9.0
+Occupation,24,,,,,,Healthcare Worker,8.0
+Occupation,23,,,,,,Teacher,7.67
+Occupation,20,,,,,,Retail Worker,6.67
+Occupation,18,,,,,,Night-Shift Worker,6.0
+Occupation,15,,,,,,Researcher,5.0
+Occupation,14,,,,,,Self-Employed,4.67
+Occupation,13,,,,,,Driver,4.33
+Occupation,11,,,,,,Manual Worker,3.67
+Chronotype,131,,,,,,Intermediate,43.67
+Chronotype,100,,,,,,Evening,33.33
+Chronotype,69,,,,,,Morning,23.0
+BMI_Category,140,,,,,,Normal,46.67
+BMI_Category,99,,,,,,Overweight,33.0
+BMI_Category,31,,,,,,Underweight,10.33
+BMI_Category,30,,,,,,Obese,10.0
+Sleep_Quality_Category,4753,,,,,,Average,52.81
+Sleep_Quality_Category,4098,,,,,,Good,45.53
+Sleep_Quality_Category,149,,,,,,Poor,1.66

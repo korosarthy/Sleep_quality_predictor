@@ -1,0 +1,11 @@
+Column_Name,Description,Data_Type,Allowed_Values_or_Range,Purpose,Source_Type
+Location_ID,Unique identifier for this location,String,L0001-L0072,Primary key; joins to Dataset 1/3,Generated (sequential)
+Continent,One of the six populated continents,Categorical,Asia/Europe/Africa/North America/South America/Oceania,Top-level geographic grouping,Real-world fact
+Region,Sub-continental geographic region,Categorical,"e.g. South Asia, Western Europe, East Africa",Finer geographic grouping,Real-world fact
+Country,Country the city is located in,Categorical,39 real countries,National context,Real-world fact
+City,City name,String,72 real cities,Location identity,Real-world fact
+Latitude,City latitude in decimal degrees,Float,-90 to 90,Drives future daylight/season calculations,Real-world fact (standard reference coordinates)
+Longitude,City longitude in decimal degrees,Float,-180 to 180,Geographic reference,Real-world fact (standard reference coordinates)
+Timezone,IANA timezone identifier,String,"Region/City format, e.g. Asia/Tokyo",Local time context for sleep timestamps,Real-world fact (IANA tz database convention)
+Climate,Broad climate classification,Categorical,"8 categories (Tropical, Dry, Temperate, Mediterranean, etc.)",Drives future environmental generation (Dataset 3),"General geographic knowledge, simplified"
+Urban_Rural,Urban/Rural classification,Categorical,Urban / Rural,Contextual density indicator,Assigned (all entries Urban - see limitations note)
